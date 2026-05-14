@@ -5,7 +5,7 @@ module TrussC
   function get_tmp_lib_path()
     # WORKAROUND to avoid error on dll loading
     (tmp_path, tmp_io) = mktemp()
-    cp(TrussC_prebuilt_jll.get_lib_path(), tmp_path);
+    cp(TrussC_prebuilt_jll.get_lib_path(), tmp_path, force=true);
     return tmp_path
   end
 
