@@ -1,6 +1,8 @@
 module TrussC
   using CxxWrap
-  @wrapmodule(() -> normpath(joinpath(@__DIR__, "..", "lib","libJlTrussC")))
+  using TrussC_prebuilt_jll
+
+  @wrapmodule(() -> TrussC_prebuilt_jll.get_lib_path())
 
   function __init__()
     @initcxx
