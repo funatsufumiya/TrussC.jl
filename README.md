@@ -8,3 +8,7 @@ TrussC Julia binding
 ## Usage
 
 see https://github.com/funatsufumiya/TrussCExample.jl
+
+## Dependencies
+
+- https://github.com/funatsufumiya/TrussC_prebuilt_jll
