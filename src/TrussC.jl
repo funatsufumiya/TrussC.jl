@@ -2,15 +2,18 @@ module TrussC
   using CxxWrap
   using TrussC_prebuilt_jll
 
-  function get_tmp_lib_path()
+  function get_tmp_lib()
     # WORKAROUND to avoid error on dll loading
-    (tmp_path, tmp_io) = mktemp()
-    cp(TrussC_prebuilt_jll.get_lib_path(), tmp_path, force=true);
-    return tmp_path
+    rm(normpath(joinpath(@__DIR__, "..", "tmp")), force=true, recursive=true);
+    mkdir(normpath(joinpath(@__DIR__, "..", "tmp")));
+    lib_path = TrussC_prebuilt_jll.get_lib_path()
+    lib_name = basename(lib_path)
+    cp(lib_path, normpath(joinpath(@__DIR__, "..", "tmp", lib_name)), force=true);
+    return normpath(joinpath(@__DIR__, "..", "tmp", lib_name))
   end
 
   # @wrapmodule(() -> TrussC_prebuilt_jll.get_lib_path())
-  @wrapmodule(() -> get_tmp_lib_path())
+  @wrapmodule(() -> get_tmp_lib())
 
   function __init__()
     @initcxx
