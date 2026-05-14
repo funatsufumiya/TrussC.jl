@@ -1,0 +1,12 @@
+name = "TrussC"
+uuid = "0a376bb9-dc76-480f-94ee-afa071fbfff1"
+version = "0.1.0"
+authors = ["Fumiya Funatsu <funatsu.fumiya@gmail.com>"]
+
+[deps]
+CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"
+TrussC_prebuilt_jll = "e7cc2c53-7038-4b74-8b33-1c1d7e4a43f4"
+
+[compat]
+CxxWrap = "0.17.5"
+TrussC_prebuilt_jll = "0.1.0"
