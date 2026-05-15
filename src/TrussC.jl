@@ -695,6 +695,23 @@ module TrussC
     getImage,
     getView,
     getSampler,
-    getAttachmentView
+    getAttachmentView,
+
+    getFormat,
+    isFloat,
+    getTotalBytes,
+    getData,
+    getDataF32,
+    getDataVoid,
+    getColor,
+    setColor,
+    setFromPixels,
+    setFromFloats,
+    copyTo,
+    clone,
+    load,
+    loadHDR,
+    loadPlatform,
+    loadFromMemory
 
 end # module TrussC
