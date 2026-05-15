@@ -1,6 +1,6 @@
 # TrussC.jl
 
-[TrussC](https://trussc.org/) Julia binding.
+[TrussC](https://trussc.org/) [Julia](https://julialang.org/) binding.
 
 <img src="docs/logo.png" width="300px"><br>
 
