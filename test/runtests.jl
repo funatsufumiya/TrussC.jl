@@ -1,5 +1,6 @@
 test_cases = [
     "vec_test.jl"
+    "json_test.jl"
 ]
 
 for case in test_cases
