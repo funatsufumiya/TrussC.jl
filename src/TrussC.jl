@@ -173,6 +173,7 @@ module TrussC
     xy,
     toVec2,
     toVec3,
+    toMatrix,
     Quaternion_identity,
     Quaternion_fromAxisAngle,
     Quaternion_fromEuler,
