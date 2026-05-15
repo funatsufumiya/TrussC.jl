@@ -79,7 +79,7 @@ In your project, run `julia --project=@.` and:
   - For example `Color.white` was replaced to `Color_white()` (***NOTE*** color constants are wrapped as function! not constant!)
 - `begin`, `end` is renamed.
   - For example `Fbo#begin()`, `Fbo#end()` were replaced to `begin_fbo`, `end_fbo`
-- functions such as `x`, `y` can be easily replaced by user variables.
+- functions such as `x`, `y`, `r` (they are needed to access such as `Vec3#x`, `Color#r`) can be easily replaced by user variables.
   - In this case, use `TrussC.x()` or `tc = TrussC; tc.x()`.
 
 ## Dependencies
