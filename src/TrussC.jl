@@ -522,6 +522,13 @@ module TrussC
     getTextureView,
     getSampler,
 
+    Color_fromBytes,
+    Color_fromHex,
+    Color_fromHSB,
+    Color_fromOKLCH,
+    Color_fromOKLab,
+    Color_fromLinear,
+
     # color constants
     Color_white,
     Color_black,

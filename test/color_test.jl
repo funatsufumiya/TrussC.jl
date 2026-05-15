@@ -21,4 +21,12 @@ using TrussC; tc = TrussC
     @test b(c) == 3.0f0
     @test a(c) == 0.0f0
 
+    c2 = Color_fromHex(0xffff00)
+    @test r(c2) == 1.0f0
+    @test g(c2) == 1.0f0
+    @test b(c2) == 0.0f0
+    @test a(c2) == 1.0f0
+    @test toHex(c2, false) == 0xffff00
+    @test toHex(c2, true) == 0xffff00ff
+
 end
