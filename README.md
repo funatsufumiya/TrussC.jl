@@ -60,6 +60,20 @@ end # module TrussCExample
 
 see [TrussCExample.jl](https://github.com/funatsufumiya/TrussCExample.jl) for detail.
 
+## Syntax cheat sheet
+
+Julia's procedural style is much different than C++ OOP style. Please check [test](./test) folder how to use types or functions in detail.
+
+|Julia (CxxWrap) |C++|
+|---------------|----|
+|`x(vec)`|`vec.x`|
+|`r(red)`|`red.r`|
+|`getWidth(fbo)`|`fbo.getWidth()`|
+|`Color_red()`|`Color.red`|
+|`Quaternion_identity()`|`Quaternion.identity()`|
+|`begin_fbo(fbo)`|`fbo.begin()`|
+|`end_fbo(fbo)`|`fbo.end()`|
+
 ## How to add this library into your project
 
 In your project, run `julia --project=@.` and:
@@ -77,10 +91,6 @@ In your project, run `julia --project=@.` and:
 > If it's too hard for you to manually build `libcxxwrap_julia_jll/override`, You can use [my prebuilt override.zip](https://github.com/funatsufumiya/TrussC.jl/releases/tag/libcxxwrap_julia_jll_override) (built for libcxxwrap_julia_jll 0.14.9+0, version at 2026/05/15.)<br>
 >
 > (or, just use WSL. It's much easier.)
-
-## Syntax
-
-Julia's procedural style is much different than C++ OOP style. Please check [test](./test) folder how to use types or functions (such as `x(vec) instead of vec.x`.)
 
 ## Known Issues
 
