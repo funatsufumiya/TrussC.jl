@@ -75,6 +75,7 @@ In your project, run `julia --project=@.` and:
 > Please see [Windows libcxxwrap_julia_jll build](https://github.com/funatsufumiya/CxxWrapTest.jl#windows-libcxxwrap_julia_jll-build) of https://github.com/funatsufumiya/CxxWrapTest.jl or https://github.com/JuliaInterop/libcxxwrap-julia in detail.<br>
 >
 > If it's too hard for you to manually build `libcxxwrap_julia_jll/override`, You can use [my prebuilt override.zip](https://github.com/funatsufumiya/TrussC.jl/releases/tag/libcxxwrap_julia_jll_override) (built for libcxxwrap_julia_jll 0.14.9+0, version at 2026/05/15.)<br>
+>
 > (or, just use WSL. It's much easier.)
 
 ## Known Issues
