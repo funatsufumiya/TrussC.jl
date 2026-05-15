@@ -76,7 +76,7 @@ Julia's procedural style is much different than C++ OOP style. Please check [tes
 
 ### Shadowing
 
-And if you shadowed `x`, `y` by your variables, you can use `TrussC.x()`.
+When you shadowed `x`, `y` by your variables, you can use `TrussC.x()` instead.
 
 ```julia
 using TrussC
