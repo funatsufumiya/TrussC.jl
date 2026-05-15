@@ -70,8 +70,9 @@ In your project, run `julia --project=@.` and:
 
 ## Known Issues
 
-- Stataic methods of types are renamed using `_` (underscore).
+- Stataic methods (and some static constants) of types are renamed using `_` (underscore).
   - For example `Quaternion.identity()` was replaced to `Quaternion_identity()`
+  - For example `Color.white` was replaced to `Color_white()`
 
 ## Dependencies
 
