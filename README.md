@@ -80,7 +80,7 @@ In your project, run `julia --project=@.` and:
 
 ## Syntax
 
-- Julia's procedural style is much different than C++ OOP style. Please check `test` folder how to use types or functions (such as `x(vec) instead of vec.x`.)
+Julia's procedural style is much different than C++ OOP style. Please check `test` folder how to use types or functions (such as `x(vec) instead of vec.x`.)
 
 ## Known Issues
 
