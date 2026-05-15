@@ -1,6 +1,6 @@
 name = "TrussC"
 uuid = "0a376bb9-dc76-480f-94ee-afa071fbfff1"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Fumiya Funatsu <funatsu.fumiya@gmail.com>"]
 
 [deps]
