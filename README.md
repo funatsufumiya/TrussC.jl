@@ -60,6 +60,11 @@ In your project, run `julia --project=@.` and:
 
 (NOTE: `pkg>` REPL can be shown by typing `]` on julia repl)
 
+## Known Issues
+
+- Stataic methods of types are renamed using `_` (underscore).
+  - For example `Quaternion.identity()` replaced to `Quaternion_identity()`
+
 ## Dependencies
 
 - https://github.com/funatsufumiya/TrussC_prebuilt_jll
