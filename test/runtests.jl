@@ -1,6 +1,7 @@
 test_cases = [
-    "vec_test.jl"
-    "json_test.jl"
+    "vec_test.jl",
+    "json_test.jl",
+    "fbo_test.jl",
 ]
 
 for case in test_cases
