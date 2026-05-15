@@ -341,6 +341,19 @@ module TrussC
     getCameraPosition,
     Vec2Ref,
     Vec3Ref,
-    FilesRef
+    FilesRef,
+    @setup,
+    @update,
+    @draw,
+    @keyPressed,
+    @keyReleased,
+    @mousePressed,
+    @mouseReleased,
+    @mouseMoved,
+    @mouseScrolled,
+    @mouseDragged,
+    @windowResized,
+    @filesDropped,
+    @exit
 
 end # module TrussC
