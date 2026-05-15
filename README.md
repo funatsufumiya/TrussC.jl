@@ -81,7 +81,7 @@ And if you shadowed `x`, `y` by your variables, you can use `TrussC.x()`.
 ```julia
 using TrussC
 tc = TrussC
-x = Vec(1.0f0, 2.0f0) # This shadows TrussC.x
+x = Vec2(1.0f0, 2.0f0) # This shadows TrussC.x
 tc.x(x) # 1.0f0
 ```
 
