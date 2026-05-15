@@ -338,6 +338,9 @@ module TrussC
     endShadowPass,
     shadowDraw,
     setCameraPosition,
-    getCameraPosition
+    getCameraPosition,
+    Vec2Ref,
+    Vec3Ref,
+    FilesRef
 
 end # module TrussC
