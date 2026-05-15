@@ -798,4 +798,32 @@ module TrussC
     isEnabled,
     calculate
 
+    getBaseColor,
+    setBaseColor,
+    setMetallic,
+    getMetallic,
+    setRoughness,
+    getRoughness,
+    setAo,
+    getAo,
+    getEmissiveStrength,
+    setEmissiveStrength,
+    getEmissive,
+    setEmissive,
+    setNormalMap,
+    getNormalMap,
+    hasNormalMap,
+    setBaseColorTexture,
+    getBaseColorTexture,
+    hasBaseColorTexture,
+    setMetallicRoughnessTexture,
+    getMetallicRoughnessTexture,
+    hasMetallicRoughnessTexture,
+    setEmissiveTexture,
+    getEmissiveTexture,
+    hasEmissiveTexture,
+    setOcclusionTexture,
+    getOcclusionTexture,
+    hasOcclusionTexture
+
 end # module TrussC
