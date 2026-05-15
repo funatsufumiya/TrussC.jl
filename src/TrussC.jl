@@ -144,6 +144,11 @@ module TrussC
 
   Base.:(==)(x::TrussC.Quaternion, y::TrussC.Quaternion) = TrussC.eq(x, y)
 
+  Base.getindex(x::TrussC.Json, y::Number) = TrussC.at(x, y)
+  Base.getindex(x::TrussC.Json, y::String) = TrussC.at(x, y)
+  Base.setindex!(x::TrussC.Json, v, y::Number) = TrussC.set(x, y, v)
+  Base.setindex!(x::TrussC.Json, v, y::String) = TrussC.set(x, y, v)
+
   Base.show(io::IO, v::TrussC.Vec2) = print(io, "Vec2(",TrussC.x(v),", ",TrussC.y(v),")")
   Base.show(io::IO, v::TrussC.Vec3) = print(io, "Vec3(",TrussC.x(v),", ",TrussC.y(v),", ",TrussC.z(v),")")
   Base.show(io::IO, v::TrussC.Vec4) = print(io, "Vec4(",TrussC.x(v),", ",TrussC.y(v),", ",TrussC.z(v),", ",TrussC.w(v),")")
@@ -151,6 +156,7 @@ module TrussC
   Base.show(io::IO, v::TrussC.IVec3) = print(io, "IVec3(",TrussC.x(v),", ",TrussC.y(v),", ",TrussC.z(v),")")
   Base.show(io::IO, v::TrussC.Quaternion) = print(io, "Quaternion(",TrussC.w(v),", ",TrussC.x(v),", ",TrussC.y(v),", ",TrussC.z(v),")")
   Base.show(io::IO, v::TrussC.Color) = print(io, "Color(",TrussC.r(v),", ",TrussC.g(v),", ",TrussC.b(v),", ",TrussC.a(v),")")
+  Base.show(io::IO, v::TrussC.Json) = print(io, "Json(",TrussC.toJsonString(v),")")
 
   export x, y, z, w, width, height, set, set!, x!, y!, z!, w!,
     r, g, b, a, r!, g!, b!, a!,
@@ -796,7 +802,7 @@ module TrussC
     enable,
     disable,
     isEnabled,
-    calculate
+    calculate,
 
     getBaseColor,
     setBaseColor,
@@ -824,6 +830,19 @@ module TrussC
     hasEmissiveTexture,
     setOcclusionTexture,
     getOcclusionTexture,
-    hasOcclusionTexture
+    hasOcclusionTexture,
+
+    Json,
+    get_string,
+    get_double,
+    get_float,
+    get_int,
+    get_bool,
+    empty,
+    loadJson,
+    saveJson,
+    saveJson,
+    parseJson,
+    toJsonString
 
 end # module TrussC
