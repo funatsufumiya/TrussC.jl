@@ -71,7 +71,7 @@ In your project, run `julia --project=@.` and:
 ## Known Issues
 
 - Stataic methods of types are renamed using `_` (underscore).
-  - For example `Quaternion.identity()` replaced to `Quaternion_identity()`
+  - For example `Quaternion.identity()` was replaced to `Quaternion_identity()`
 
 ## Dependencies
 
