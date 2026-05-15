@@ -72,7 +72,7 @@ In your project, run `julia --project=@.` and:
 
 - Stataic methods (and some static constants) of types are renamed using `_` (underscore).
   - For example `Quaternion.identity()` was replaced to `Quaternion_identity()`
-  - For example `Color.white` was replaced to `Color_white()`
+  - For example `Color.white` was replaced to `Color_white()` (***NOTE*** color constants are wrapped as function! not constant!)
 - `begin`, `end` is renamed.
   - For example `Fbo#begin()`, `Fbo#end()` were replaced to `begin_fbo`, `end_fbo`
 
