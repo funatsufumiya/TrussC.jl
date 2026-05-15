@@ -89,3 +89,9 @@ In your project, run `julia --project=@.` and:
 ## Dependencies
 
 - https://github.com/funatsufumiya/TrussC_prebuilt_jll
+
+## Unit tests
+
+```bash
+$ julia --project=@. -e 'using Pkg; Pkg.test()'
+```

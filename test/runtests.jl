@@ -1,0 +1,9 @@
+test_cases = [
+    "vec_test.jl"
+]
+
+for case in test_cases
+  include(case)
+end
+
+nothing
