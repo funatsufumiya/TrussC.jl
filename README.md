@@ -80,7 +80,7 @@ In your project, run `julia --project=@.` and:
 - `begin`, `end` is renamed.
   - For example `Fbo#begin()`, `Fbo#end()` were replaced to `begin_fbo`, `end_fbo`
 - functions such as `x`, `y`, `r` (they are needed to access such as `Vec3#x`, `Color#r`) can be easily replaced by user variables.
-  - In this case, use `TrussC.x()` or `tc = TrussC; tc.x()`.
+  - In this case, use `TrussC.x(vec)` or `tc = TrussC; tc.x(vec)` instaed of `x(vec)`.
 
 ## Dependencies
 
