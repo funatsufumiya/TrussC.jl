@@ -78,6 +78,10 @@ In your project, run `julia --project=@.` and:
 >
 > (or, just use WSL. It's much easier.)
 
+## Syntax
+
+- Julia's procedural style is much different than C++ OOP style. Please check `test` folder how to use types or functions (such as `x(vec) instead of vec.x`.)
+
 ## Known Issues
 
 - Stataic methods (and some static constants) of types are renamed using `_` (underscore).
