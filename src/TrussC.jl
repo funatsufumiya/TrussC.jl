@@ -4,12 +4,15 @@ module TrussC
 
   function get_tmp_lib()
     # WORKAROUND to avoid error on dll loading
-    rm(normpath(joinpath(@__DIR__, "..", "tmp")), force=true, recursive=true);
-    mkdir(normpath(joinpath(@__DIR__, "..", "tmp")));
+    tmp_dir = normpath(joinpath(@__DIR__, "..", "tmp"))
+    # rm(tmp_dir, force=true, recursive=true)
+    if !isdir(tmp_dir)
+      mkdir(tmp_dir)
+    end
     lib_path = TrussC_prebuilt_jll.get_lib_path()
     lib_name = basename(lib_path)
-    cp(lib_path, normpath(joinpath(@__DIR__, "..", "tmp", lib_name)), force=true);
-    return normpath(joinpath(@__DIR__, "..", "tmp", lib_name))
+    cp(lib_path, normpath(joinpath(tmp_dir, lib_name)), force=true);
+    return normpath(joinpath(tmp_dir, lib_name))
   end
 
   # @wrapmodule(() -> TrussC_prebuilt_jll.get_lib_path())
