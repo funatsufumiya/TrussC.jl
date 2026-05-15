@@ -74,6 +74,17 @@ Julia's procedural style is much different than C++ OOP style. Please check [tes
 |`begin_fbo(fbo)`|`fbo.begin()`|
 |`end_fbo(fbo)`|`fbo.end()`|
 
+### Shadowing
+
+And if you shadowed `x`, `y` by your variables, you can use `TrussC.x()`.
+
+```julia
+using TrussC
+tc = TrussC
+x = Vec(1.0f0, 2.0f0) # This shadows TrussC.x
+tc.x(x) # 1.0f0
+```
+
 ## How to add this library into your project
 
 In your project, run `julia --project=@.` and:
