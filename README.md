@@ -63,7 +63,7 @@ In your project, run `julia --project=@.` and:
 - `pkg> add https://github.com/funatsufumiya/TrussC_prebuilt_jll.git`
 - `pkg> add https://github.com/funatsufumiya/TrussC.jl.git`
 
-(NOTE: `pkg>` REPL can be shown by typing `]` on julia repl)
+(NOTE: `pkg>` REPL can be shown by typing `]` on julia REPL, and type Backspace key to back normal REPL.)
 
 > [!Warning]
 > ***Windows CxxWrap.jl issue***<br><br>
