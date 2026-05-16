@@ -31,9 +31,10 @@ module TrussC
   CxxRef = CxxWrap.CxxRef
   CxxPtr = CxxWrap.CxxPtr
 
-  function makeRef(v::T) where {T}
-    ref::Union{T, CxxRef{T}} = v
-    return ref
+  function makeRef(v::T)::Union{T, CxxRef{T}} where {T}
+    # ref::Union{T, CxxRef{T}} = v
+    # return ref
+    return v::Union{T, CxxRef{T}}
   end
 
   macro setup(fn)
