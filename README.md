@@ -109,6 +109,7 @@ In your project, run `julia --project=@.` and:
 
 ## Known Issues
 
+- Default values are not treated perfectly now. You may need `clear(1.0f0, 1.0f0)` instaed of `clear(1.0f0)`.
 - Stataic methods (and some static constants) of types are renamed using `_` (underscore).
   - For example `Quaternion.identity()` was replaced to `Quaternion_identity()`
   - For example `Color.white` was replaced to `Color_white()` (***NOTE*** color constants are wrapped as function! not constant!)
