@@ -224,6 +224,9 @@ module TrussC
     PrimitiveType,
     Image,
     PrimitiveMode,
+
+
+
     setMode,
     getMode,
     addVertex,
@@ -725,6 +728,17 @@ module TrussC
     getView,
     getSampler,
     getAttachmentView,
+
+    Material_gold,
+    Material_silver,
+    Material_copper,
+    Material_iron,
+    Material_bronze,
+    Material_emerald,
+    Material_ruby,
+    Material_plastic,
+    Material_rubber,
+    Material_fromPhong,
 
     getFormat,
     isFloat,
