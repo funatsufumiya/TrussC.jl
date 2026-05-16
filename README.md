@@ -89,7 +89,7 @@ x = Vec2(1.0f0, 2.0f0) # This shadows TrussC.x
 tc.x(x) # 1.0f0
 ```
 
-For other common example: `tc.draw(image)`, `tc.string(e)` etc...
+For other common example: `tc.draw(image)`, `tc.update(a)`, `tc.string(e)` etc...
 
 ## How to add this library into your project
 
