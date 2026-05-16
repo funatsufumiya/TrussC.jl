@@ -117,6 +117,7 @@ In your project, run `julia --project=@.` and:
   - For example `Fbo#begin()`, `Fbo#end()` were replaced to `begin_fbo`, `end_fbo`
 - functions such as `x`, `y`, `r` (they are needed to access such as `Vec3#x`, `Color#r`) can be easily replaced by user variables.
   - In this case, use `TrussC.x(vec)` or `tc = TrussC; tc.x(vec)` instaed of `x(vec)`.
+- You may need `nothing` at the end of `setup` or `draw`, in order to indicate void function (for limitation of @cfunction bridge.)
 
 ## Dependencies
 
