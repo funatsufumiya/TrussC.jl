@@ -31,6 +31,11 @@ module TrussC
   CxxRef = CxxWrap.CxxRef
   CxxPtr = CxxWrap.CxxPtr
 
+  function makeRef(v::T) where {T}
+    ref::Union{T, CxxRef{T}} = v
+    return ref
+  end
+
   macro setup(fn)
     return :( TrussC.setSetupFn(@cfunction($fn, Cvoid, ())) )
   end
@@ -696,6 +701,7 @@ module TrussC
 
     CxxRef,
     CxxPtr,
+    makeRef,
 
     allocateCubemap,
     uploadCubemapFace,
