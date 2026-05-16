@@ -155,6 +155,8 @@ module TrussC
   Base.setindex!(x::TrussC.Json, v, y::Number) = TrussC.set(x, y, v)
   Base.setindex!(x::TrussC.Json, v, y::String) = TrussC.set(x, y, v)
 
+  Base.getindex(x::TrussC.Path, y::Number) = TrussC.at(x, y)
+
   Base.show(io::IO, v::TrussC.Vec2) = print(io, "Vec2(",TrussC.x(v),", ",TrussC.y(v),")")
   Base.show(io::IO, v::TrussC.Vec3) = print(io, "Vec3(",TrussC.x(v),", ",TrussC.y(v),", ",TrussC.z(v),")")
   Base.show(io::IO, v::TrussC.Vec4) = print(io, "Vec4(",TrussC.x(v),", ",TrussC.y(v),", ",TrussC.z(v),", ",TrussC.w(v),")")
@@ -919,6 +921,49 @@ module TrussC
     empty,
     addDeclaration,
     loadXml,
-    parseXml
+    parseXml,
+
+    EaseType, EaseMode,
+    TweenFloat, TweenVec2, TweenVec3, TweenColor,
+
+    from,
+    to,
+    duration,
+    ease,
+    loop,
+    yoyo,
+    delay,
+    start,
+    pause,
+    resume,
+    reset,
+    finish,
+    getValue,
+    getProgress,
+    getElapsed,
+    getDuration,
+    isPlaying,
+    isComplete,
+    getStart,
+    getEnd,
+    getLoopCount,
+
+    addVertex,
+    addVertices,
+    getVertices,
+    size,
+    empty,
+    at,
+    clear,
+    lineTo,
+    bezierTo,
+    quadBezierTo,
+    curveTo,
+    arc,
+    close,
+    setClosed,
+    isClosed,
+    getBounds,
+    getPerimeter
 
 end # module TrussC
