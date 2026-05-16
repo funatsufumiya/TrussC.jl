@@ -691,6 +691,9 @@ module TrussC
     Color_lightSlateGray,
     Color_darkSlateGray,
 
+    CxxRef,
+    CxxPtr,
+
     allocateCubemap,
     uploadCubemapFace,
     uploadCubemapMip,
