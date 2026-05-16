@@ -74,6 +74,8 @@ Julia's procedural style is much different than C++ OOP style. Please check [tes
 |`begin_fbo(fbo)`|`fbo.begin()`|
 |`end_fbo(fbo)`|`fbo.end()`|
 
+(If you need method chaining, you can use `|>` operator or [Chain.jl](https://github.com/jkrumbiegel/Chain.jl) and [Lazy.jl](https://github.com/MikeInnes/Lazy.jl) as you like.)
+
 ### Shadowing
 
 When you shadowed `x`, `y` by your variables, you can use `TrussC.x()` instead.
