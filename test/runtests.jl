@@ -3,6 +3,8 @@ test_cases = [
     "json_test.jl",
     "fbo_test.jl",
     "color_test.jl",
+    "image_test.jl",
+    "path_test.jl",
 ]
 
 for case in test_cases

@@ -144,6 +144,9 @@ module TrussC
 
   Base.:(==)(x::TrussC.Quaternion, y::TrussC.Quaternion) = TrussC.eq(x, y)
 
+  Base.:/(x::TrussC.Path, y::TrussC.Path) = TrussC.div(x, y)
+  Base.:/(x::TrussC.Path, y::TrussC.String) = TrussC.div(x, y)
+
   Base.getindex(x::TrussC.Json, y::Number) = TrussC.at(x, y)
   Base.getindex(x::TrussC.Json, y::String) = TrussC.at(x, y)
   Base.setindex!(x::TrussC.Json, v, y::Number) = TrussC.set(x, y, v)
@@ -157,6 +160,7 @@ module TrussC
   Base.show(io::IO, v::TrussC.Quaternion) = print(io, "Quaternion(",TrussC.w(v),", ",TrussC.x(v),", ",TrussC.y(v),", ",TrussC.z(v),")")
   Base.show(io::IO, v::TrussC.Color) = print(io, "Color(",TrussC.r(v),", ",TrussC.g(v),", ",TrussC.b(v),", ",TrussC.a(v),")")
   Base.show(io::IO, v::TrussC.Json) = print(io, "Json(",TrussC.toJsonString(v),")")
+  Base.show(io::IO, v::TrussC.Path) = print(io, "Path(",TrussC.string(v),")")
 
   export x, y, z, w, width, height, set, set!, x!, y!, z!, w!,
     r, g, b, a, r!, g!, b!, a!,
@@ -521,6 +525,18 @@ module TrussC
     getColorImage,
     getTextureView,
     getSampler,
+
+    Path,
+    string,
+    c_str,
+    exists,
+    is_directory,
+    is_dir,
+    is_regular_file,
+    is_file,
+    is_empty,
+    absolute,
+    relative,
 
     Color_fromBytes,
     Color_fromHex,
