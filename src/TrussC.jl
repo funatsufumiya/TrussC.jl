@@ -28,6 +28,9 @@ module TrussC
   Vec3Ref = CxxRef{TrussC.Vec3}
   FilesRef = CxxRef{StdVector{StdString}}
 
+  CxxRef = CxxWrap.CxxRef
+  CxxPtr = CxxWrap.CxxPtr
+
   macro setup(fn)
     return :( TrussC.setSetupFn(@cfunction($fn, Cvoid, ())) )
   end
