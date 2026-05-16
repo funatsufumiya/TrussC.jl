@@ -776,6 +776,7 @@ module TrussC
     begin_easycam,
     end_cam,
     end_easycam,
+    reset,
     setTarget,
     getTarget,
     setUpAxis,
