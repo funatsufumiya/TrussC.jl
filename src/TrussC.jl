@@ -865,6 +865,39 @@ module TrussC
     saveJson,
     saveJson,
     parseJson,
-    toJsonString
+    toJsonString,
+
+    Xml,
+    XmlAttribute,
+    XmlText,
+    XmlNode,
+
+    get,
+    name,
+    value,
+    append_attribute,
+    prepend_attribute,
+    append_child,
+    prepend_child,
+    attribute,
+    child,
+    text,
+    first_child,
+    last_child,
+    first_attribute,
+    last_attribute,
+    remove_children,
+    children,
+
+    parse,
+    toString,
+    root,
+    addRoot,
+    child,
+    document,
+    empty,
+    addDeclaration,
+    loadXml,
+    parseXml
 
 end # module TrussC

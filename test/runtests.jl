@@ -5,6 +5,7 @@ test_cases = [
     "color_test.jl",
     "image_test.jl",
     "path_test.jl",
+    "xml_test.jl",
 ]
 
 for case in test_cases
