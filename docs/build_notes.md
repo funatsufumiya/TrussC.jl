@@ -20,7 +20,7 @@ flowchart TD
 
 The build process above is a little hard to test interactive binding changes of [tcxJuliaCxxWrap](https://github.com/funatsufumiya/tcxJuliaCxxWrap/).
 
-So for development, we are using shorthand dll override process.
+So for development, we are using shorthand dll override process (for test only).
 
 ```mermaid
 flowchart TD
