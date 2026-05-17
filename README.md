@@ -109,6 +109,13 @@ In your project, run `julia --project=@.` and:
 >
 > (or, just use WSL. It's much easier.)
 
+## Addons
+
+> [!Note]
+> Addon implementation guide is not written (Issue [#1](https://github.com/funatsufumiya/TrussC.jl/issues/3))
+
+- [tcxOsc.jl](https://github.com/funatsufumiya/tcxOsc.jl)
+
 ## Known Issues
 
 - Default values are not treated perfectly now. You may need `clear(1.0f0, 1.0f0)` instaed of `clear(1.0f0)`.
