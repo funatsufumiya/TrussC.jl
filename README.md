@@ -130,3 +130,7 @@ In your project, run `julia --project=@.` and:
 ```bash
 $ julia --project=@. -e 'using Pkg; Pkg.test()'
 ```
+
+## Build notes
+
+see [docs/build_notes.md](docs/build_notes.md)
