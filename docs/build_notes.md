@@ -4,7 +4,7 @@
 
 ```mermaid
 flowchart TD
-  tcxJuliaCxxWrap-->TrussC_prebuilt_jll_packager.jl
+  tcxJuliaCxxWrap-->|dll/so/dylib|TrussC_prebuilt_jll_packager.jl
   TrussC_prebuilt_jll_packager.jl-->TrussC_prebuilt_jll
   TrussC_prebuilt_jll-->TrussC.jl
 ```
