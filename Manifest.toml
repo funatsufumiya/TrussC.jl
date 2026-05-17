@@ -58,7 +58,7 @@ version = "0.3.0"
 
 [[deps.TrussC_prebuilt_jll]]
 deps = ["Artifacts"]
-git-tree-sha1 = "d98c2eb05f96c999e7855b85186b3487e2ff40d2"
+git-tree-sha1 = "a7c3b5a0e46718b7f85c885386c4921ab47886cf"
 repo-rev = "main"
 repo-url = "https://github.com/funatsufumiya/TrussC_prebuilt_jll.git"
 uuid = "cfe08a50-4fff-11f1-bfed-990c59676b1f"
