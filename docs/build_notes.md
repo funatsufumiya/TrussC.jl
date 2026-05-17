@@ -34,4 +34,4 @@ flowchart TD
    - Check test cases using `julia --project=@. -e 'using Pkg; Pkg.test()'`
 
 > [!Note]
-> This shorthand process is only for development. If all completed, please execute the original process in order to apply it in published artifacts.
+> This shorthand process is only for development. If all completed, **you must execute the original build process** in order to apply it in published artifacts.
