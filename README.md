@@ -114,6 +114,7 @@ In your project, run `julia --project=@.` and:
 Not full addons yet not supported, but some addons are supported in other libraries.
 
 - [tcxOsc.jl](https://github.com/funatsufumiya/tcxOsc.jl)
+- [tcxHap.jl](https://github.com/funatsufumiya/tcxHap.jl)
 
 > [!Note]
 > **TODO**: Addon implementation guide for developpers is not written yet (Issue [#1](https://github.com/funatsufumiya/TrussC.jl/issues/3))
