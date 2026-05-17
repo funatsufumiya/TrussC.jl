@@ -6,6 +6,13 @@ test_cases = [
     "image_test.jl",
     "path_test.jl",
     "xml_test.jl",
+
+    "hap_player_test.jl",
+
+    "osc_bundle_test.jl",
+    "osc_message_test.jl",
+    "osc_receiver_test.jl",
+    "osc_sender_test.jl",
 ]
 
 for case in test_cases
