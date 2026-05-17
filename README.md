@@ -111,6 +111,8 @@ In your project, run `julia --project=@.` and:
 
 ## Addons
 
+Not full addons yet not supported, but some addons are supported in other libraries.
+
 - [tcxOsc.jl](https://github.com/funatsufumiya/tcxOsc.jl)
 
 > [!Note]
