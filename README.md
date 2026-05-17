@@ -111,10 +111,10 @@ In your project, run `julia --project=@.` and:
 
 ## Addons
 
-> [!Note]
-> Addon implementation guide is not written (Issue [#1](https://github.com/funatsufumiya/TrussC.jl/issues/3))
-
 - [tcxOsc.jl](https://github.com/funatsufumiya/tcxOsc.jl)
+
+> [!Note]
+> TODO: Addon implementation guide for developpers is not written yet (Issue [#1](https://github.com/funatsufumiya/TrussC.jl/issues/3))
 
 ## Known Issues
 
