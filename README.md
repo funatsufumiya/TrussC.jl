@@ -117,7 +117,7 @@ Not full addons yet not supported, but some addons are supported in other librar
 - tcxHap
 
 > [!Warning]
-> They are already included in TrussC.jl, and separated DLLs now makes rendering problem (Issue [#1](https://github.com/funatsufumiya/TrussC.jl/issues/3, Issue [tcxHap.jl#1](https://github.com/funatsufumiya/tcxHap.jl/issues/1))<br>
+> They are already included in TrussC.jl, and separated DLLs now makes rendering problem (Issue [#1](https://github.com/funatsufumiya/TrussC.jl/issues/3), Issue [tcxHap.jl#1](https://github.com/funatsufumiya/tcxHap.jl/issues/1))<br>
 > This would be hard problem to use other addons. We need more investigation and need to find the way to use other DLLs, without recompiling TrussC_precompiled_jll (libJlTrussC) itself.
 
 ## Known Issues
