@@ -18,7 +18,7 @@ flowchart TD
 
 ## For handy development (shorthand dll override)
 
-The build process above is a little hard to test interactive binding changes of [tcxJuliaCxxWrap](https://github.com/funatsufumiya/tcxJuliaCxxWrap/).
+The build process above is a little hard adn messy to test interactive binding changes of [tcxJuliaCxxWrap](https://github.com/funatsufumiya/tcxJuliaCxxWrap/).
 
 So for development, we are using shorthand dll override process (for test only).
 
