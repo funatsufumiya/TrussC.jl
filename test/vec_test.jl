@@ -13,6 +13,15 @@ using TrussC; tc = TrussC
   @test v1 * 2.0f0 == Vec2(2.0f0, 4.0f0)
   @test v1 / 2.0f0 == Vec2(0.5f0, 1.0f0)
 
+  v2 = Vec2(1.0f0, 2.0f0)
+  @test x(v2) == 1.0f0
+  @test y(v2) == 2.0f0
+
+  x!(v2, 2.0f0)
+  y!(v2, 3.0f0)
+  @test x(v2) == 2.0f0
+  @test y(v2) == 3.0f0
+
 end
 
 @testset "Vec3 Test" begin
