@@ -112,7 +112,7 @@ In your project, run `julia --project=@.` and:
 
 ## Addons
 
-Not full addons not yet supported, but some addons are supported in other libraries.
+Not full addons supported, but some addons are supported in other libraries.
 
 - tcxOsc
 - tcxHap
