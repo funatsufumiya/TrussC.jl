@@ -6,6 +6,7 @@ test_cases = [
     "image_test.jl",
     "path_test.jl",
     "xml_test.jl",
+    "sound_test.jl",
 
     "hap_player_test.jl",
 
