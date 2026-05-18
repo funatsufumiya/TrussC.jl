@@ -70,6 +70,7 @@ Julia's procedural style is much different than C++ OOP style. Please check [tes
 |---------------|----|
 |`x(vec)`|`vec.x`|
 |`r(red)`|`red.r`|
+|`x!(vec, new_value)`|`vec.x = new_value`|
 |`getWidth(fbo)`|`fbo.getWidth()`|
 |`Color_red()`|`Color.red`|
 |`Quaternion_identity()`|`Quaternion.identity()`|
