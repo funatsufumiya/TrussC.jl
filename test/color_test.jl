@@ -21,6 +21,15 @@ using TrussC; tc = TrussC
     @test b(c) == 3.0f0
     @test a(c) == 0.0f0
 
+    r!(c, 2.0f0)
+    g!(c, 3.0f0)
+    b!(c, 4.0f0)
+    a!(c, 1.0f0)
+    @test r(c) == 2.0f0
+    @test g(c) == 3.0f0
+    @test b(c) == 4.0f0
+    @test a(c) == 1.0f0
+
     c2 = Color_fromHex(0xffff00)
     @test r(c2) == 1.0f0
     @test g(c2) == 1.0f0
